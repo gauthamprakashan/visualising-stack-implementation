@@ -91,16 +91,16 @@ Happy Coding 🎉🎉
 
 
 
-#Schema Design and Mentor Mentee Mapping
+# Schema Design and Mentor Mentee Mapping
 
 ## 1. To Create the Mentor Mentee Mapping, we send the unique employee id(uuid v4) from the employees table as a foreign key relation to the mentor_id and mentee_id primary keys of the Mentor table. 
 ## 2. Each Mentor can have multiple mentees. This mapping is preserved as both the keys together form the primary key and each mentor can have multiple mentees.
 ## 3. Historical data can also be acceseed without overwriting or violating other constraints. We have start_date and end_date for the duration of the mentorship. The end_date can be set as NULL, for an ongoing mentorship.
 
-#Key Components
+# Key Components
 
-##Mentor ID (mentor_id): Unique identifier for mentors, referencing the id field of the employees table.
-##Mentee ID (mentee_id): Unique identifier for mentees, also referencing the id field of the employees table.
+## Mentor ID (mentor_id): Unique identifier for mentors, referencing the id field of the employees table.
+## Mentee ID (mentee_id): Unique identifier for mentees, also referencing the id field of the employees table.
 ## Start Date (start_date): Marks the beginning of the mentorship.
 ## End Date (end_date): Indicates the conclusion of the mentorship (nullable for ongoing relationships).
 
